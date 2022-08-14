@@ -1,0 +1,12 @@
+#prompt user for greeting
+# if hello user gets $0
+#elif greeting start with h but not hello user gets $20
+#else user gets $100
+greet = (input("How would you like to greet me? "))
+
+if greet.casefold().strip().startswith('hello'):
+    print('You get $0')
+elif greet.casefold().strip().startswith('h'):
+    print('You get $20')
+else:
+    print('You get $100')
